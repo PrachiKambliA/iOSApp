@@ -11,9 +11,22 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var MaterialsView: UIView!
+    @IBOutlet weak var ToolsView: UIView!
+    @IBOutlet weak var MeterView: UIView!
+    @IBOutlet weak var LastView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        MaterialsView.layer.cornerRadius = 12;
+        MaterialsView.layer.masksToBounds = true;
+        ToolsView.layer.cornerRadius = 12;
+        ToolsView.layer.masksToBounds = true;
+        MeterView.layer.cornerRadius = 12;
+        MeterView.layer.masksToBounds = true;
+        LastView.layer.cornerRadius = 12;
+        LastView.layer.masksToBounds = true;
     }
     
     override func viewWillAppear(_ animated: Bool) {
