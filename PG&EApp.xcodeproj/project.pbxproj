@@ -17,7 +17,6 @@
 		7EF009BD247DC6A300581F7A /* PG_EAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF009BC247DC6A300581F7A /* PG_EAppTests.swift */; };
 		7EF009C8247DC6A300581F7A /* PG_EAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF009C7247DC6A300581F7A /* PG_EAppUITests.swift */; };
 		7EF009D6247DED4000581F7A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF009D5247DED4000581F7A /* GradientView.swift */; };
-		7EF009D8247DF0AB00581F7A /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = 7EF009D7247DF0AB00581F7A /* Sources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		7EF009C7247DC6A300581F7A /* PG_EAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PG_EAppUITests.swift; sourceTree = "<group>"; };
 		7EF009C9247DC6A300581F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EF009D5247DED4000581F7A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		7EF009D7247DF0AB00581F7A /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				7EF009A9247DC6A100581F7A /* ViewController.swift */,
 				7EF009AB247DC6A100581F7A /* Main.storyboard */,
 				7E99D883247EC871007BD4E9 /* HomeViewController.swift */,
-				7EF009D7247DF0AB00581F7A /* Sources */,
 				7EF009AE247DC6A300581F7A /* Assets.xcassets */,
 				7EF009B0247DC6A300581F7A /* LaunchScreen.storyboard */,
 				7EF009B3247DC6A300581F7A /* Info.plist */,
@@ -244,7 +241,6 @@
 				7EF009B2247DC6A300581F7A /* LaunchScreen.storyboard in Resources */,
 				7EF009AF247DC6A300581F7A /* Assets.xcassets in Resources */,
 				7EF009AD247DC6A100581F7A /* Main.storyboard in Resources */,
-				7EF009D8247DF0AB00581F7A /* Sources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
