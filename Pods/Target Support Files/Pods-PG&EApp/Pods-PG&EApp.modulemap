@@ -1,0 +1,6 @@
+framework module Pods_PG_EApp {
+  umbrella header "Pods-PG&EApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
