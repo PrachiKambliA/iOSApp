@@ -1,0 +1,6 @@
+framework module Pods_PG_EApp_PG_EAppUITests {
+  umbrella header "Pods-PG&EApp-PG&EAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
