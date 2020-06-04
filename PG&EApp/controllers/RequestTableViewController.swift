@@ -13,13 +13,14 @@ class RequestTableViewController: UITableViewController {
     //MARK: Properties
     
     var requests = [Request]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.9176470588, alpha: 1)
         // Load the sample requests
-        readJson()
+        requests = DB.database.getRequests()
     }
 
     // MARK: - Table view data source
@@ -112,35 +113,5 @@ class RequestTableViewController: UITableViewController {
     }
     */
     
-    //MARK: Private Methods
-    private func readJson() {
-        do {
-            if let file = Bundle.main.url(forResource: "mockedRequests", withExtension: "json") {
-                let data = try Data(contentsOf: file)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                if let requestsArr = json as? [[String: Any]] {
-                    // json is an array
-                    for req in requestsArr {
-                        let id = req["id"] as? String ?? ""
-                        let type = req["type"] as? String ?? ""
-                        let subtype = req["subtype"] as? String ?? ""
-                        let landId = req["lanId"] as? String ?? ""
-                        let location = req["location"] as? String ?? ""
-                        let status = req["status"] as? String ?? ""
-                        let date = Date().addingTimeInterval(TimeInterval(Int.random(in: 1...100) * (-86000)))
-                        
-                        let request = Request(id: id, type: type, subtype: subtype, lanId: landId, location: location, status: status, date: date)
-                        requests += [request]
-                    }
-                } else {
-                    print("JSON is invalid")
-                }
-            } else {
-                print("no file")
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
 
 }
