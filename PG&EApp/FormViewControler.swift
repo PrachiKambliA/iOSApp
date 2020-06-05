@@ -24,27 +24,27 @@ class MyFormViewController: FormViewController {
                 $0.title = "Manufacturer"
                 $0.add(rule: RuleRequired())
                 $0.selectorTitle = "Select Manufacturer"
-                $0.options = ["Manufacturer","Names","Go", "Here"]
+                $0.options = DB.database.getManufacturers()
                 $0.value = "Select"    // initially selected
             }
             <<< PushRow<String>() {
                 $0.title = "Material Type"
                 $0.add(rule: RuleRequired())
                 $0.selectorTitle = "Select Material Type"
-                $0.options = ["Material","Names","Go", "Here"]
+                $0.options = DB.database.getMaterialTypes()
                 $0.value = "Select"    // initially selected
             }
             <<< PushRow<String>() {
                 $0.title = "Age"
                 $0.add(rule: RuleRequired())
                 $0.selectorTitle = "Select Age"
-                $0.options = ["< 2 yrs","2 - 5 yrs","> 5 yrs"]
+                $0.options = DB.database.getAges()
                 $0.value = "Select"    // initially selected
             }
             <<< PushRow<String>() {
                 $0.title = "Application"
                 $0.selectorTitle = "Select Application"
-                $0.options = ["Application","Names","Go", "Here"]
+                $0.options = DB.database.getApplications()
                 $0.value = "Select"    // initially selected
             }
             <<< TextRow(){ row in

@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
         MeterView.layer.masksToBounds = true;
         LastView.layer.cornerRadius = 12;
         LastView.layer.masksToBounds = true;
+        let chicken = DB.database.getRequests()
     }
     
     override func viewWillAppear(_ animated: Bool) {
